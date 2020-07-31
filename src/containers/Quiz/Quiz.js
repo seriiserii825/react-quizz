@@ -7,7 +7,7 @@ class Quiz extends React.Component {
 	state = {
 		answerState: null,
 		activeQuestion: 0,
-		isFinished: true,
+		isFinished: false,
 		quiz: [
 			{
 				question: 'Какого цвета небо?',
