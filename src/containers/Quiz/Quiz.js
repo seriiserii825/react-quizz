@@ -8,8 +8,8 @@ class Quiz extends React.Component {
 		results: {}, // {[id]: success error}
 		answerState: null,
 		activeQuestion: 0,
-		// isFinished: true,
-		isFinished: false,
+		isFinished: true,
+		// isFinished: false,
 		quiz: [
 			{
 				question: 'Какого цвета небо?',

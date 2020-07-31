@@ -1,0 +1,32 @@
+.Button {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 10px 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+}
+.Button:disabled {
+	color: #000;
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+.Button.primary {
+	color: white;
+	background-color: deepskyblue;
+}
+.Button.error {
+	color: white;
+	background-color: red;
+}
+.Button.success  {
+	color: white;
+	background-color: green;
+}
+.Button:active {
+	box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+}
