@@ -58,6 +58,7 @@ export default class Auth extends Component {
 					touched={control.touched}
 					label={control.label}
 					errorMessage={control.errorMessage}
+					souldValidate={true}
 					onChange={event => this.onChangeHandler(event, controlName)}
 				/>
 			)
