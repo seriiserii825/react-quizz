@@ -41,10 +41,24 @@ export default class Auth extends Component {
 	}
 	registerHandler = () => {
 
+
+	}
+	validateControl = () => {
+
 	}
 	onChangeHandler = (event, controlName) => {
-		console.log(controlName, event.target.value);
+		const formControl = {...this.state.formControls}
+		const control = {...formControl[controlName]}
+
+		control.value = event.target.value
+		control.valid = this.validateControl(control.value, control.validation)
+
+		formControl[controlName] = control
+		this.setState({
+			formControl
+		})
 	}
+
 
 	renderInputs() {
 		return Object.keys(this.state.formControls).map((controlName, index) => {
